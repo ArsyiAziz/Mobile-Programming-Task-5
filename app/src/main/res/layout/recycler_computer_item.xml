@@ -47,6 +47,6 @@
         android:layout_marginStart="10dp"
         android:ellipsize="end"
         android:maxLines="3"
-        android:text="@string/computer_summary_example"
+        android:text="@string/summary_example"
         android:layout_marginLeft="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".DetailActivity"
+        tools:context=".ComputerDetailActivity"
         android:padding="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,6 +90,6 @@
             app:layout_constraintTop_toBottomOf="@id/header"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/computer_summary_example"/>
+            android:text="@string/summary_example"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

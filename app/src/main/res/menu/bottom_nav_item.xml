@@ -4,10 +4,10 @@
         android:id="@+id/menu_item_computer"
         android:icon="@drawable/ic_baseline_computer_24"
         android:title="@string/label_computers" />
-    <item
-        android:id="@+id/menu_item_favourite"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        android:title="@string/label_favourite" />
+u    <item
+        android:id="@+id/menu_item_developer"
+        android:icon="@drawable/ic_baseline_handyman_24"
+        android:title="@string/label_developers" />
     <item
         android:id="@+id/menu_item_history"
         android:icon="@drawable/ic_baseline_history_24"
