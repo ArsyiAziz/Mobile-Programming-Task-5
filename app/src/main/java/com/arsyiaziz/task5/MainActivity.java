@@ -24,20 +24,13 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bottom_nav);
         fragmentMap = new HashMap<>();
-
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         fragmentMap.put(R.id.menu_item_computer,  new ComputerFragment());
         fragmentMap.put(R.id.menu_item_developer,  new DeveloperFragment());
         fragmentMap.put(R.id.menu_item_history,  new HistoryFragment());
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.menu_item_computer);
-
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
