@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
         fragmentMap.put(R.id.menu_item_computer,  new ComputerFragment());
-        fragmentMap.put(R.id.menu_item_favourite,  new FavouriteFragment());
+        fragmentMap.put(R.id.menu_item_developer,  new DeveloperFragment());
         fragmentMap.put(R.id.menu_item_history,  new HistoryFragment());
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.menu_item_computer);
@@ -48,8 +47,8 @@ public class MainActivity extends AppCompatActivity
             case R.id.menu_item_computer:
                 setActionBarTitle(getResources().getString(R.string.label_computers));
                 break;
-            case R.id.menu_item_favourite:
-                setActionBarTitle(getResources().getString(R.string.label_favourite));
+            case R.id.menu_item_developer:
+                setActionBarTitle(getResources().getString(R.string.label_developers));
                 break;
             case R.id.menu_item_history:
                 setActionBarTitle(getResources().getString(R.string.label_history));

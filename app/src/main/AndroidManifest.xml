@@ -10,22 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task5">
 
-        <activity android:name=".DetailActivity"
-        android:parentActivityName=".MainActivity">
+        <activity android:name=".DeveloperDetailActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".MainActivity"
-            android:label="@string/main_activity_title" >
+        <activity
+            android:name=".ComputerDetailActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_activity_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

@@ -45,8 +45,8 @@ public class ComputerFragment extends Fragment implements OnItemClickListener<Co
 
     @Override
     public void onClick(ComputerModel computerModel) {
-        Intent intent = new Intent(getActivity(), DetailActivity.class);
-        intent.putExtra(DetailActivity.details, computerModel);
+        Intent intent = new Intent(getActivity(), ComputerDetailActivity.class);
+        intent.putExtra(ComputerDetailActivity.details, computerModel);
         startActivity(intent);
     }
 }

@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
 
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DetailActivity extends AppCompatActivity {
-    public final static String details = "COMPUTER_Details";
+public class ComputerDetailActivity extends AppCompatActivity {
+    public final static String details = "COMPUTER_DETAILS";
 
 
     private ImageView ivComputerPhoto;
@@ -24,7 +23,7 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_computer_detail);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ivComputerPhoto = findViewById(R.id.iv_computer_photo);
@@ -52,7 +51,7 @@ public class DetailActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
